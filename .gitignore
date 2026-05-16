@@ -1,0 +1,44 @@
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+/app/src/main/java/com/yusuf/expensetracker/data/
+/app/src/main/java/com/yusuf/expensetracker/di/
+/app/src/main/java/com/yusuf/expensetracker/domain/model
+/app/src/main/java/com/yusuf/expensetracker/presentation/
+/app/src/main/java/com/yusuf/expensetracker/util/
+/app/src/main/java/com/yusuf/expensetracker/ExpenseTrackerApp.kt
+
+
+# Gradle
+.gradle/
+build/
+**/build/
+
+# Local config
+local.properties
+
+# Android Studio
+.idea/
+*.iml
+
+# Logs
+*.log
+
+# Crash dumps
+*.hprof
+
+# OS
+.DS_Store
+Thumbs.db
