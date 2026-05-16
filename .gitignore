@@ -19,6 +19,7 @@ local.properties
 /app/src/main/java/com/yusuf/expensetracker/presentation/
 /app/src/main/java/com/yusuf/expensetracker/util/
 /app/src/main/java/com/yusuf/expensetracker/ExpenseTrackerApp.kt
+/.README.md
 
 
 # Gradle
