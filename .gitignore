@@ -16,10 +16,15 @@ local.properties
 /app/src/main/java/com/yusuf/expensetracker/data/
 /app/src/main/java/com/yusuf/expensetracker/di/
 /app/src/main/java/com/yusuf/expensetracker/domain/model
-/app/src/main/java/com/yusuf/expensetracker/presentation/
+/app/src/main/java/com/yusuf/expensetracker/presentation/navigation/
+/app/src/main/java/com/yusuf/expensetracker/presentation/ui/add_edit/
+/app/src/main/java/com/yusuf/expensetracker/presentation/ui/components/
+/app/src/main/java/com/yusuf/expensetracker/presentation/ui/stats/
+/app/src/main/java/com/yusuf/expensetracker/presentation/ui/transactions/
+/app/src/main/java/com/yusuf/expensetracker/presentation/ui/budget/
 /app/src/main/java/com/yusuf/expensetracker/util/
 /app/src/main/java/com/yusuf/expensetracker/ExpenseTrackerApp.kt
-/.README.md
+
 
 
 # Gradle
