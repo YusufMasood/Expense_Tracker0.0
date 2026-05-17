@@ -1,4 +1,4 @@
-package com.yusuf.expensetracker
+package com.yusuf.expensepro
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -14,9 +14,9 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.navigation.NavDestination.Companion.hierarchy
 import androidx.navigation.NavGraph.Companion.findStartDestination
 import androidx.navigation.compose.*
-import com.yusuf.expensetracker.presentation.navigation.Screen
-import com.yusuf.expensetracker.presentation.navigation.ExpenseNavGraph
-import com.yusuf.expensetracker.presentation.theme.ExpenseTrackerTheme
+import com.yusuf.expensepro.presentation.navigation.Screen
+import com.yusuf.expensepro.presentation.navigation.ExpenseNavGraph
+import com.yusuf.expensepro.presentation.theme.ExpenseTrackerTheme
 import dagger.hilt.android.AndroidEntryPoint
 
 data class BottomNavItem(val screen: Screen, val label: String, val icon: ImageVector)
@@ -25,12 +25,12 @@ data class BottomNavItem(val screen: Screen, val label: String, val icon: ImageV
 class MainActivity : ComponentActivity() {
 
     private val bottomNavItems = listOf(
-        BottomNavItem(Screen.Home, "Home", Icons.Default.Home),
-        BottomNavItem(Screen.Stats, "Stats", Icons.Default.BarChart),
+        BottomNavItem(Screen.Home,   "Home",   Icons.Default.Home),
+        BottomNavItem(Screen.Stats,  "Stats",  Icons.Default.BarChart),
         BottomNavItem(Screen.Budget, "Budget", Icons.Default.AccountBalance),
+        BottomNavItem(Screen.Split,  "Split",  Icons.Default.CallSplit),
     )
 
-    @OptIn(ExperimentalMaterial3Api::class)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()

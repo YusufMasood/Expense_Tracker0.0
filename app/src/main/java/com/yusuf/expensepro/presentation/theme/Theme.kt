@@ -1,4 +1,4 @@
-package com.yusuf.expensetracker.presentation.theme
+package com.yusuf.expensepro.presentation.theme
 
 import android.app.Activity
 import android.os.Build
@@ -11,12 +11,9 @@ import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalView
 import androidx.compose.ui.text.TextStyle
-import androidx.compose.ui.text.font.Font
-import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 import androidx.core.view.WindowCompat
-import com.yusuf.expensetracker.R
 
 // ─── Colors ────────────────────────────────────────────────────────────────
 
