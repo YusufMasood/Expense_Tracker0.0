@@ -25,7 +25,7 @@ class ForgotPasswordViewModel @Inject constructor(private val authRepository: Au
             _uiState.update { it.copy(isLoading = true) }
             when (val r = authRepository.sendPasswordReset(email.trim())) {
                 is AuthResult.Success -> _uiState.update { it.copy(isLoading = false, isSuccess = true) }
-                is AuthResult.Error -> _uiState.update { it.copy(isLoading = false, error = r.message) }
+                is AuthResult.Error   -> _uiState.update { it.copy(isLoading = false, error = r.message) }
             }
         }
     }

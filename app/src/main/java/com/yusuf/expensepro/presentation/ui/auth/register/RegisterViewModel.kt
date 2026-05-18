@@ -32,21 +32,16 @@ class RegisterViewModel @Inject constructor(private val authRepository: AuthRepo
 
     fun register() {
         val s = _uiState.value; var err = false
-        if (s.name.isBlank()) { _uiState.update {
-            it.copy(nameError = "Name required") }; err = true }
-        if (!android.util.Patterns.EMAIL_ADDRESS.matcher(s.email)
-            .matches()) { _uiState.update {
-                it.copy(emailError = "Valid email required") }; err = true }
-        if (s.password.length < 6) { _uiState.update {
-            it.copy(passwordError = "Min 6 characters") }; err = true }
-        if (s.password != s.confirmPassword)
-        { _uiState.update { it.copy(confirmError = "Passwords don't match") }; err = true }
+        if (s.name.isBlank()) { _uiState.update { it.copy(nameError = "Name required") }; err = true }
+        if (!android.util.Patterns.EMAIL_ADDRESS.matcher(s.email).matches()) { _uiState.update { it.copy(emailError = "Valid email required") }; err = true }
+        if (s.password.length < 6) { _uiState.update { it.copy(passwordError = "Min 6 characters") }; err = true }
+        if (s.password != s.confirmPassword) { _uiState.update { it.copy(confirmError = "Passwords don't match") }; err = true }
         if (err) return
         viewModelScope.launch {
             _uiState.update { it.copy(isLoading = true, error = null) }
-            when (val result = authRepository.register(s.email.trim(), s.password, s.name.trim())) {
+            when (val r = authRepository.register(s.email.trim(), s.password, s.name.trim())) {
                 is AuthResult.Success -> _uiState.update { it.copy(isLoading = false, isSuccess = true) }
-                is AuthResult.Error -> _uiState.update { it.copy(isLoading = false, error = result.message) }
+                is AuthResult.Error   -> _uiState.update { it.copy(isLoading = false, error = r.message) }
             }
         }
     }
