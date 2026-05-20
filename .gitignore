@@ -14,29 +14,7 @@
 .cxx
 local.properties
 app/google-services.json
-/app/src/main/java/com/yusuf/expensetracker/data/
-/app/src/main/java/com/yusuf/expensetracker/di/
-/app/src/main/java/com/yusuf/expensetracker/domain/model
-/app/src/main/java/com/yusuf/expensetracker/presentation/navigation/
-/app/src/main/java/com/yusuf/expensetracker/presentation/ui/add_edit/
-/app/src/main/java/com/yusuf/expensetracker/presentation/ui/components/
-/app/src/main/java/com/yusuf/expensetracker/presentation/ui/stats/
-/app/src/main/java/com/yusuf/expensetracker/presentation/ui/transactions/
-/app/src/main/java/com/yusuf/expensetracker/presentation/ui/budget/
-/app/src/main/java/com/yusuf/expensetracker/util/
-/app/src/main/java/com/yusuf/expensetracker/ExpenseTrackerApp.kt
-/app/src/main/java/com/yusuf/expensepro/ExpenseTrackerApp.kt
-/app/src/main/java/com/yusuf/expensepro/data/
-/app/src/main/java/com/yusuf/expensepro/di/
-/app/src/main/java/com/yusuf/expensepro/domain/
-/app/src/main/java/com/yusuf/expensepro/presentation/navigation/
-/app/src/main/java/com/yusuf/expensepro/presentation/ui/add_edit/
-/app/src/main/java/com/yusuf/expensepro/presentation/ui/budget/
-/app/src/main/java/com/yusuf/expensepro/presentation/ui/components/
-/app/src/main/java/com/yusuf/expensepro/presentation/ui/split/
-/app/src/main/java/com/yusuf/expensepro/presentation/ui/stats/
-/app/src/main/java/com/yusuf/expensepro/presentation/ui/transactions/
-/app/src/main/java/com/yusuf/expensepro/util/
+
 
 
 # Gradle
